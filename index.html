@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina | Web Design & Soluciones Digitales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #2563eb; --dark: #0f172a; --gray: #64748b; --light: #f8fafc; }
+        body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--dark); margin: 0; }
+        header { padding: 80px 10%; text-align: center; background: white; border-bottom: 1px solid #e2e8f0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 10%; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; text-align: center; padding-bottom: 20px; }
+        .card:hover { transform: translateY(-5px); }
+        .card-img { height: 180px; background: #eee; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; }
+        .card-info { padding: 20px; }
+        .btn-view { display: inline-block; padding: 10px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; margin-top: 10px; }
+        footer { padding: 40px; text-align: center; font-size: 0.9rem; color: var(--gray); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Valentina San Martin</h1>
+        <p>Landing pages modernas para potenciar tu emprendimiento.</p>
+    </header>
+
+    <section class="grid">
+        <div class="card">
+            <div class="card-img" style="background:#fdf2f2;">💅 Glow Nails</div>
+            <div class="card-info">
+                <h3>Estética y Manicura</h3>
+                <p>Diseño elegante y femenino.</p>
+                <a href="glow-nails/uñas.html" class="btn-view">Ver Demo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img" style="background:#fff7ed;">🍔 Gastronomía</div>
+            <div class="card-info">
+                <h3>Menú Digital</h3>
+                <p>Optimizado para pedidos rápidos.</p>
+                <a href="gastronomia/comida.html" class="btn-view">Ver Demo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img" style="background:#f1f5f9;">👗 Showroom</div>
+            <div class="card-info">
+                <h3>Tienda de Ropa</h3>
+                <p>Estilo minimalista y visual.</p>
+                <a href="indumentaria/ropa.html" class="btn-view">Ver Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hecho con ❤️ en Cipolletti, Argentina</p>
+    </footer>
+</body>
+</html>

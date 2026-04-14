@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Nails | Arte en tus Manos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --pink: #f8d7da; --dark-p: #d4a5a9; --gold: #c5a059; --dark: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--dark); line-height: 1.6; background: #fafafa; }
+        nav { display: flex; justify-content: space-between; padding: 20px 10%; background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--dark-p); letter-spacing: 2px; }
+        .hero { height: 70vh; background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
+        .btn { padding: 15px 30px; background: var(--dark-p); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 600; transition: 0.3s; }
+        .btn:hover { background: var(--gold); transform: translateY(-3px); }
+        .services { padding: 60px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; }
+        .card { background: #fff; padding: 30px; border-radius: 15px; transition: 0.3s; }
+        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        footer { background: #333; color: #fff; padding: 40px; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav><div class="logo">GLOW NAILS</div></nav>
+    <header class="hero">
+        <h1>Tu Brillo, Tus Reglas</h1>
+        <p style="margin-bottom: 25px;">Manicura y Nail Art profesional en Cipolletti.</p>
+        <a href="#" class="btn">Reservar Turno</a>
+    </header>
+    <section class="services">
+        <div class="card"><h3>Semipermanente</h3><p>Color impecable por 15 días.</p></div>
+        <div class="card"><h3>Esculpidas</h3><p>El largo que siempre soñaste.</p></div>
+        <div class="card"><h3>Nail Art</h3><p>Diseños únicos a mano alzada.</p></div>
+    </section>
+    <footer><p>&copy; 2026 Glow Nails</p></footer>
+</body>
+</html>
