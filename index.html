@@ -3,57 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentina San Martin | Soluciones Digitales Modernas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Valentina San Martin | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <button class="theme-toggle"><i class="far fa-moon"></i></button>
-
     <section class="hero">
         <div class="hero-text">
             <h1>Hola, soy Valentina.</h1>
             <p>Diseño y desarrollo landing pages de alto impacto para emprendedores modernos.</p>
-            <a href="https://wa.me/+542996011533" class="btn-main">Hablemos de tu Landing</a>
+            <a href="#hablemos" class="btn-main">Hablemos de tu Landing</a>
         </div>
         <div class="hero-avatar">
             <img src="avatar.png" alt="Valentina">
         </div>
     </section>
 
-    <section class="about">
-        <h2>Lo Que Te Ofrezco</h2>
-        <div class="about-grid">
-            <div class="about-card">
-                <i class="fas fa-brush"></i>
-                <h3>Diseño Moderno</h3>
-                <p>Estética premium adaptada al estilo de tu marca.</p>
-            </div>
-            <div class="about-card">
-                <i class="fas fa-rocket"></i>
-                <h3>Soluciones Rápidas</h3>
-                <p>Tus landings en 48-72 horas, listas para vender.</p>
-            </div>
-            <div class="about-card">
-                <i class="fas fa-bullseye"></i>
-                <h3>Enfoque en Ventas</h3>
-                <p>Optimizadas para que te contacten por WhatsApp.</p>
-            </div>
-        </div>
-    </section>
-
     <section class="skills">
-        <h2>Mi Toolkit</h2>
-        <p>Las tecnologías que uso para crear experiencias digitales.</p>
+        <h2>Mis habilidades</h2>
+        <p>Herramientas y tecnologías que domino para potenciar tu marca.</p>
         <div class="skill-tags">
-            <span># HTML5</span>
-            <span># CSS3 Moderno</span>
-            <span># Responsive Design</span>
-            <span># Git</span>
-            <span># GitHub Pages</span>
-            <span># DevOps Base</span>
+            <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+            <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+            <div class="skill-item"><i class="fas fa-database"></i> PostgreSQL</div>
         </div>
     </section>
 
@@ -62,45 +40,48 @@
         <div class="project-grid">
             <div class="project-card">
                 <div class="card-icon"><i class="fas fa-spa"></i></div>
-                <h3>Estética Glow Nails</h3>
-                <p>Landing page elegante y femenina para servicios de manicuría.</p>
-                <a href="glow-nails/uñas.html" class="btn-demo">Ver Demo</a>
+                <h3>Glow Nails</h3>
+                <a href="unas.html" class="btn-demo">Ver Demo</a>
             </div>
             <div class="project-card">
                 <div class="card-icon"><i class="fas fa-utensils"></i></div>
-                <h3>Gastronomía Sabores</h3>
-                <p>Menú digital vibrante con pedidos directos a WhatsApp.</p>
-                <a href="gastronomia/comida.html" class="btn-demo">Ver Demo</a>
+                <h3>Gastronomía</h3>
+                <a href="comida.html" class="btn-demo">Ver Demo</a>
             </div>
             <div class="project-card">
                 <div class="card-icon"><i class="fas fa-tshirt"></i></div>
-                <h3>Urban Style Showroom</h3>
-                <p>Catálogo visual y minimalista para tiendas de ropa.</p>
-                <a href="indumentaria/ropa.html" class="btn-demo">Ver Demo</a>
+                <h3>Urban Style</h3>
+                <a href="ropa.html" class="btn-demo">Ver Demo</a>
             </div>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>¡Hablemos, Vamos a Brillar Juntos!</h2>
-        <p>¿Tenés un proyecto en mente? Escribime o agendá una llamada.</p>
-        <form class="contact-form">
-            <div class="form-group">
-                <input type="text" placeholder="Tu Nombre">
-                <input type="email" placeholder="Tu Correo">
+    <section id="hablemos" class="contact">
+        <h2>Hablemos</h2>
+        <p>Completá el formulario y me pondré en contacto con vos a la brevedad.</p>
+        
+        <form action="https://formspree.io/f/mwvapdnp" method="POST" class="contact-form">
+            <div class="form-row">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
             </div>
-            <textarea placeholder="Tu Mensaje" rows="5"></textarea>
+            <div class="form-row">
+                <input type="tel" name="telefono" placeholder="Número de WhatsApp" required>
+                <select name="emprendimiento" required>
+                    <option value="" disabled selected>Tipo de emprendimiento</option>
+                    <option value="Gastronomía">Gastronomía</option>
+                    <option value="Estética">Estética / Uñas</option>
+                    <option value="Ropa">Showroom de Ropa</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <textarea name="mensaje" placeholder="Contame un poco sobre lo que estás buscando..." rows="4" required></textarea>
             <button type="submit" class="btn-main">Enviar Mensaje</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2026 Valentina San Martin | Hecho en Cipolletti</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://wa.me/+542996011533"><i class="fab fa-whatsapp"></i></a>
-        </div>
+        <p>© 2026 Valentina San Martin | Hecho con ❤️ en Cipolletti</p>
     </footer>
 
 </body>
