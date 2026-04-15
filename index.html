@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <section class="hero">
+    <section class="bento-item hero">
         <div class="hero-text">
             <h1>Hola, soy Valentina.</h1>
             <p>Diseño y desarrollo landing pages de alto impacto para emprendedores modernos.</p>
@@ -21,9 +21,29 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="bento-item about">
+        <h2>Lo Que Te Ofrezco</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-brush"></i>
+                <h3>Diseño Moderno</h3>
+                <p>Estética premium adaptada al estilo de tu marca.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Soluciones Rápidas</h3>
+                <p>Tus landings en 48-72 horas, listas para vender.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Enfoque en Ventas</h3>
+                <p>Optimizadas para que te contacten por WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bento-item skills">
         <h2>Mis habilidades</h2>
-        <p>Herramientas y tecnologías que domino para potenciar tu marca.</p>
         <div class="skill-tags">
             <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
             <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
@@ -31,58 +51,73 @@
             <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
             <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
             <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
-            <div class="skill-item"><i class="fas fa-database"></i> PostgreSQL</div>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="bento-item projects">
         <h2>Mis Creaciones</h2>
         <div class="project-grid">
             <div class="project-card">
                 <div class="card-icon"><i class="fas fa-spa"></i></div>
-                <h3>Glow Nails</h3>
-                <a href="unas.html" class="btn-demo">Ver Demo</a>
+                <h3>Estética Glow Nails</h3>
+                <p>Landing page elegante y femenina para servicios de manicuría.</p>
+                <a href="glow-nails/uñas.html" class="btn-demo">Ver Demo</a>
             </div>
             <div class="project-card">
                 <div class="card-icon"><i class="fas fa-utensils"></i></div>
-                <h3>Gastronomía</h3>
-                <a href="comida.html" class="btn-demo">Ver Demo</a>
+                <h3>Gastronomía Sabores</h3>
+                <p>Menú digital vibrante con pedidos directos a WhatsApp.</p>
+                <a href="gastronomia/comida.html" class="btn-demo">Ver Demo</a>
             </div>
             <div class="project-card">
                 <div class="card-icon"><i class="fas fa-tshirt"></i></div>
-                <h3>Urban Style</h3>
-                <a href="ropa.html" class="btn-demo">Ver Demo</a>
+                <h3>Urban Style Showroom</h3>
+                <p>Catálogo visual y minimalista para tiendas de ropa.</p>
+                <a href="indumentaria/ropa.html" class="btn-demo">Ver Demo</a>
             </div>
         </div>
     </section>
 
-    <section id="hablemos" class="contact">
+    <section id="hablemos" class="bento-item contact">
         <h2>Hablemos</h2>
-        <p>Completá el formulario y me pondré en contacto con vos a la brevedad.</p>
-        
         <form action="https://formspree.io/f/mwvapdnp" method="POST" class="contact-form">
             <div class="form-row">
                 <input type="text" name="nombre" placeholder="Nombre" required>
                 <input type="text" name="apellido" placeholder="Apellido" required>
             </div>
             <div class="form-row">
-                <input type="tel" name="telefono" placeholder="Número de WhatsApp" required>
-                <select name="emprendimiento" required>
+                <input type="tel" name="telefono" placeholder="WhatsApp" required>
+                <select name="tipo_emprendimiento" id="selector-tipo" required>
                     <option value="" disabled selected>Tipo de emprendimiento</option>
                     <option value="Gastronomía">Gastronomía</option>
-                    <option value="Estética">Estética / Uñas</option>
-                    <option value="Ropa">Showroom de Ropa</option>
+                    <option value="Estética">Estética</option>
+                    <option value="Ropa">Showroom</option>
                     <option value="Otro">Otro</option>
                 </select>
             </div>
-            <textarea name="mensaje" placeholder="Contame un poco sobre lo que estás buscando..." rows="4" required></textarea>
-            <button type="submit" class="btn-main">Enviar Mensaje</button>
+            <input type="text" name="otro_emprendimiento" id="input-otro" placeholder="¿Cuál es tu emprendimiento?" style="display: none; margin-top: 10px;">
+            
+            <button type="submit" class="btn-main" style="margin-top: 25px;">Enviar Mensaje</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2026 Valentina San Martin | Hecho con ❤️ en Cipolletti</p>
+        <p>© 2026 Valentina San Martin | Hecho en Cipolletti</p>
     </footer>
 
+    <script>
+        const selector = document.getElementById('selector-tipo');
+        const inputOtro = document.getElementById('input-otro');
+
+        selector.addEventListener('change', function() {
+            if (this.value === 'Otro') {
+                inputOtro.style.display = 'block';
+                inputOtro.required = true;
+            } else {
+                inputOtro.style.display = 'none';
+                inputOtro.required = false;
+            }
+        });
+    </script>
 </body>
 </html>
