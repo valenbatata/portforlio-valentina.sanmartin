@@ -3,36 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Nails | Arte en tus Manos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root { --pink: #f8d7da; --dark-p: #d4a5a9; --gold: #c5a059; --dark: #333; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; color: var(--dark); line-height: 1.6; background: #fafafa; }
-        nav { display: flex; justify-content: space-between; padding: 20px 10%; background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--dark-p); letter-spacing: 2px; }
-        .hero { height: 70vh; background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
-        .btn { padding: 15px 30px; background: var(--dark-p); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 600; transition: 0.3s; }
-        .btn:hover { background: var(--gold); transform: translateY(-3px); }
-        .services { padding: 60px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; }
-        .card { background: #fff; padding: 30px; border-radius: 15px; transition: 0.3s; }
-        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        footer { background: #333; color: #fff; padding: 40px; text-align: center; }
-    </style>
+    <title>Glow Nails | Experiencia Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="uñas.css">
 </head>
 <body>
-    <nav><div class="logo">GLOW NAILS</div></nav>
-    <header class="hero">
-        <h1>Tu Brillo, Tus Reglas</h1>
-        <p style="margin-bottom: 25px;">Manicura y Nail Art profesional en Cipolletti.</p>
-        <a href="#" class="btn">Reservar Turno</a>
+
+    <header class="hero-distinct">
+        <nav class="navbar">
+            <div class="logo">Glow Nails</div>
+        </nav>
+        <div class="hero-content">
+            <span class="badge"><i class="fas fa-gem"></i> Premium Nail Salon & Spa</span>
+            <h1>Beautiful Nails,<br><span class="highlight">Confident You</span></h1>
+            <p>Experiencia de lujo en el cuidado de uñas con artistas expertos. Desde manicuría clásica hasta impresionantes diseños de nail art, hacemos realidad tus sueños.</p>
+            <div class="hero-buttons">
+                <a href="#precios" class="btn-primary">Reservar Cita <i class="far fa-heart"></i></a>
+                <a href="#galeria" class="btn-secondary">Ver Galería</a>
+            </div>
+        </div>
     </header>
-    <section class="services">
-        <div class="card"><h3>Semipermanente</h3><p>Color impecable por 15 días.</p></div>
-        <div class="card"><h3>Esculpidas</h3><p>El largo que siempre soñaste.</p></div>
-        <div class="card"><h3>Nail Art</h3><p>Diseños únicos a mano alzada.</p></div>
-    </section>
-    <footer><p>&copy; 2026 Glow Nails</p></footer>
+
+    <main class="main-container">
+        
+        <section id="servicios" class="bento-item services-section">
+            <span class="badge-dark"><i class="fas fa-spa"></i> Cuidado Experto</span>
+            <h2>Nuestros Servicios</h2>
+            <p>Experiencia de lujo adaptada a tu estilo.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Manicuría Clásica</h3>
+                    <p>Cuidado meticuloso de cutículas y esmaltado de alta duración.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-brush"></i>
+                    <h3>Diseño de Autor</h3>
+                    <p>Arte único en tus uñas con técnicas avanzadas y creativas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Tratamientos</h3>
+                    <p>Cuidado intensivo para uñas y manos, nutrición y fortalecimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="bento-item gallery-section">
+            <span class="badge-dark"><i class="fas fa-sparkles"></i> Showcase Creativo</span>
+            <h2>Nuestra Galería</h2>
+            <p>Explorá nuestra colección de diseños exquisitos</p>
+            <div class="gallery-grid">
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+                <div class="img-placeholder"><i class="fas fa-camera"></i></div>
+            </div>
+        </section>
+
+        <section id="precios" class="bento-item pricing-section">
+            <span class="badge-dark"><i class="fas fa-tag"></i> Precios Transparentes</span>
+            <h2>Lujo Accesible</h2>
+            <p>Cuidado premium a precios que miman tus uñas y tu bolsillo</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Cuidado Básico</h3>
+                    <div class="price">$25<span>/sesión</span></div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Manicuría Clásica</li>
+                        <li><i class="fas fa-check"></i> Corte y Limado</li>
+                        <li><i class="fas fa-check"></i> Esmaltado Tradicional</li>
+                    </ul>
+                    <a href="https://wa.me/tunúmero?text=Hola!%20Quiero%20reservar%20el%20servicio%20Cuidado%20Básico" class="btn-booking">Reservar Ahora</a>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="popular-badge">MÁS PEDIDO</div>
+                    <h3>Premium Glam</h3>
+                    <div class="price">$45<span>/sesión</span></div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Todo lo Básico</li>
+                        <li><i class="fas fa-check"></i> Esmaltado Semipermanente</li>
+                        <li><i class="fas fa-check"></i> Capping en Gel</li>
+                    </ul>
+                    <a href="https://wa.me/tunúmero?text=Hola!%20Quiero%20reservar%20el%20servicio%20Premium%20Glam" class="btn-booking primary">Reservar Ahora</a>
+                </div>
+
+                <div class="price-card">
+                    <h3>Luxury Spa</h3>
+                    <div class="price">$75<span>/sesión</span></div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Todo lo Premium</li>
+                        <li><i class="fas fa-check"></i> Soft Gel / Esculpidas</li>
+                        <li><i class="fas fa-check"></i> Nail Art Complejo</li>
+                    </ul>
+                    <a href="https://wa.me/tunúmero?text=Hola!%20Quiero%20reservar%20el%20servicio%20Luxury%20Spa" class="btn-booking">Reservar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-distinct">
+        <p>© 2026 Glow Nails | Estética Premium</p>
+    </footer>
+
 </body>
 </html>
