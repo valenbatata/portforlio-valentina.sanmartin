@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Catering | Eventos Premium</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="catering.css">
+</head>
+
+<body>
+
+    <header class="catering-hero">
+        <nav class="catering-nav">
+            <div class="logo">Sabores <span>Catering</span></div>
+        </nav>
+
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="gold-text">Experiencias Gastronómicas Inolvidables</h1>
+                <p>Llevamos la alta cocina a tu evento. Diseño de menú personalizado, servicio impecable y sabores que
+                    cautivan.</p>
+                <div class="hero-buttons">
+                    <a href="#cotizar" class="btn-gold">Cotizar Evento</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="media/plato-comida.png" alt="Plato Gourmet" class="floating-dish">
+            </div>
+        </div>
+    </header>
+
+    <section class="about-us bento-block">
+        <div class="about-content">
+            <div class="about-text">
+                <span class="badge-gold">Nuestra Historia</span>
+                <h2 class="gold-text">Pasión por la Alta Cocina</h2>
+                <p>Nacimos en el corazón de Cipolletti con una misión clara: transformar cada celebración en un hito
+                    gastronómico. Lo que comenzó como un pequeño emprendimiento familiar de pastelería artesanal,
+                    evolucionó gracias a nuestra dedicación por la técnica y la selección de materias primas de
+                    excelencia.</p>
+                <p>Hoy, Sabores Catering es sinónimo de elegancia y buen gusto en la Patagonia, fusionando la tradición
+                    de los sabores locales con la vanguardia de la cocina internacional.</p>
+            </div>
+            <div class="about-chef">
+                <div class="chef-card">
+                    <img src="media/chef.png" alt="Nuestro Chef Ejecutivo">
+                    <div class="chef-info">
+                        <h4>Diego Arriagada</h4>
+                        <span>Chef Ejecutivo & Fundador</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="catering-services">
+        <h2 class="gold-text text-center">Nuestros Servicios</h2>
+        <p class="section-subtitle text-center">Nos adaptamos a la magnitud y estilo de tu celebración.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+
+                <h3>Bodas & Casamientos</h3>
+                <p>Recepciones elegantes, cenas de pasos y mesas dulces espectaculares para tu gran día.</p>
+            </div>
+            <div class="service-card">
+
+                <h3>Eventos Corporativos</h3>
+                <p>Coffee breaks, almuerzos ejecutivos y cocktails de fin de año para tu empresa.</p>
+            </div>
+            <div class="service-card">
+
+                <h3>Celebraciones Privadas</h3>
+                <p>Cumpleaños, aniversarios y reuniones familiares con propuestas de finger food y tapeo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-highlight">
+        <div class="menu-content">
+            <h2 class="gold-text">El Arte en Cada Bocado</h2>
+            <p>Seleccionamos la mejor materia prima para crear opciones que se adaptan a todos los paladares.</p>
+
+            <ul class="menu-list">
+                <li><i class="fas fa-check gold-text"></i> <strong>Recepción:</strong> Bruschettas de salmón,
+                    empanaditas de carne cortada a cuchillo y pinchos caprese.</li>
+                <li><i class="fas fa-check gold-text"></i> <strong>Plato Principal:</strong> Opciones de carnes
+                    braseadas, pastas artesanales y menú vegetariano/celíaco.</li>
+                <li><i class="fas fa-check gold-text"></i> <strong>Mesa Dulce:</strong> Variedad de postres en shots,
+                    mini tartas, alfajores artesanales y budines de diseño.</li>
+            </ul>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=800&auto=format&fit=crop"
+                    alt="Evento 1">
+                <div class="carousel-caption">Bodas al Aire Libre</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop"
+                    alt="Evento 2">
+                <div class="carousel-caption">Eventos Corporativos</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop" alt="Evento 3">
+                <div class="carousel-caption">Celebraciones Premium</div>
+            </div>
+
+            <button class="carousel-btn prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+
+    <footer id="cotizar" class="catering-footer">
+        <h2 class="gold-text">¿Planeamos tu próximo evento?</h2>
+        <p>Contanos qué tenés en mente y armamos un presupuesto a tu medida.</p>
+        <a href="https://wa.me/tunúmero?text=Hola!%20Quiero%20pedir%20un%20presupuesto%20para%20un%20evento."
+            class="btn-gold large-btn">Escribinos por WhatsApp</a>
+
+        <div class="footer-info">
+            <p>© 2026 Sabores Catering | Servicio disponible en Cipolletti y alrededores.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".carousel-slide");
+
+        function moveSlide(n) {
+            slides[slideIndex].classList.remove("active");
+            slideIndex += n;
+
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+            slides[slideIndex].classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
