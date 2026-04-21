@@ -3,35 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Style | Showroom</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        :root { --dark: #111; }
-        * { margin:0; padding:0; box-sizing: border-box; }
-        body { font-family: 'Raleway', sans-serif; background: #fff; color: var(--dark); }
-        nav { padding: 25px; text-align: center; border-bottom: 1px solid #eee; text-transform: uppercase; letter-spacing: 4px; font-family: 'Oswald'; font-size: 1.5rem; }
-        .hero { height: 60vh; background: #f0f0f0; display: flex; align-items: center; justify-content: center; text-align: center; }
-        .hero h2 { font-family: 'Oswald'; font-size: 3rem; text-transform: uppercase; }
-        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px; }
-        .img-box { aspect-ratio: 3/4; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: 15px; }
-        .img-1 { background-image: url('https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=500'); }
-        .img-2 { background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500'); }
-        .label { background: #fff; padding: 5px 15px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
-        .btn-shop { display: block; width: 90%; margin: 30px auto; background: var(--dark); color: #fff; text-align: center; padding: 20px; text-decoration: none; font-weight: bold; letter-spacing: 2px; }
-    </style>
+    <title>Urban Style | Activewear Showroom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ropa.css">
 </head>
 <body>
-    <nav>URBAN STYLE</nav>
-    <section class="hero">
-        <div>
-            <h2>New Season</h2>
-            <p>Colección 2026</p>
+
+    <div class="top-bar">
+        SHOWROOM EXCLUSIVO EN CIPOLLETTI - COORDINÁ TU VISITA POR WHATSAPP
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#conjuntos">CONJUNTOS</a>
+            <a href="#leggings">LEGGINGS</a>
+            <a href="#tops">TOPS & BRAS</a>
+            <a href="#lounge">LOUNGE</a>
+        </div>
+        <div class="logo">URBAN</div>
+        <div class="nav-icons">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#contacto"><i class="far fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <header class="hero-split">
+        <div class="hero-img left">
+            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=800&auto=format&fit=crop" alt="Entrenamiento">
+        </div>
+        <div class="hero-text-center">
+            <h1>MOVE.<br>REST.<br>RECOVER.</h1>
+            <p>Indumentaria diseñada para potenciar tu rendimiento y acompañar tu descanso.</p>
+            <a href="#conjuntos" class="link-underline">EXPLORAR CATEGORÍAS</a>
+        </div>
+        <div class="hero-img right">
+            <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?q=80&w=800&auto=format&fit=crop" alt="Descanso">
+        </div>
+    </header>
+
+    <section id="conjuntos" class="product-section">
+        <div class="section-intro">
+            <span class="category-label">01 / CATEGORÍA</span>
+            <h2>CONJUNTOS SEAMLESS</h2>
+            <p>Tecnología sin costuras para máxima libertad de movimiento.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1571731956672-f2b94e7ddbcd?q=80&w=600&auto=format&fit=crop" alt="Conjunto Navy">
+                <h3>NAVY CORSET SET</h3>
+                <a href="https://wa.me/tunúmero" class="btn-consultar">CONSULTAR DISPONIBILIDAD</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop" alt="Conjunto Beige">
+                <h3>BEIGE ACTIVE ROMPER</h3>
+                <a href="https://wa.me/tunúmero" class="btn-consultar">CONSULTAR DISPONIBILIDAD</a>
+            </div>
         </div>
     </section>
-    <div class="gallery">
-        <div class="img-box img-1"><span class="label">Hoodies</span></div>
-        <div class="img-box img-2"><span class="label">Oversize</span></div>
-    </div>
-    <a href="#" class="btn-shop">VER CATÁLOGO</a>
+
+    <section id="leggings" class="feature-block">
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?q=80&w=1200&auto=format&fit=crop" alt="Leggings">
+        </div>
+        <div class="feature-text">
+            <h2>SCULPT LEGGINGS</h2>
+            <p>Compresión media y tiro alto. Diseñadas para entrenamientos de fuerza y alta intensidad.</p>
+            <a href="#contacto" class="link-underline">VER CATÁLOGO COMPLETO</a>
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer-landing">
+        <div class="footer-content">
+            <h2>URBAN STYLE</h2>
+            <p>¿Viste algo que te gusta? Escribinos para coordinar tu entrega o pasar por el showroom.</p>
+            <div class="social-links">
+                <a href="https://wa.me/tunúmero" class="social-btn"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
+                <a href="https://instagram.com" class="social-btn"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+            </div>
+            <p class="credits">© 2026 URBAN STYLE | CIPOLLETTI, ARGENTINA</p>
+        </div>
+    </footer>
+
 </body>
 </html>
